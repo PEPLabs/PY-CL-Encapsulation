@@ -1,0 +1,35 @@
+{
+  "type": "python",
+  "testFiles": [
+    {
+      "path": "src/test/lab_test.py",
+      "testCases": [
+        {
+          "methodName": "setUp",
+          "label": "Setup BankAccount instance before tests",
+          "description": "Creates a BankAccount object with account number '1234567890' and initial balance 1000 before each test."
+        },
+        {
+          "methodName": "test_initial_balance",
+          "label": "Verify initial account balance",
+          "description": "Checks that a new BankAccount has the correct starting balance of 1000."
+        },
+        {
+          "methodName": "test_deposit",
+          "label": "Verify deposit increases balance",
+          "description": "Ensures that depositing 500 increases the account balance from 1000 to 1500."
+        },
+        {
+          "methodName": "test_withdraw",
+          "label": "Verify withdraw decreases balance",
+          "description": "Ensures that withdrawing 200 decreases the account balance from 1000 to 800."
+        },
+        {
+          "methodName": "test_account_number",
+          "label": "Verify account number retrieval",
+          "description": "Checks that get_account_number() returns the correct account number '1234567890'."
+        }
+      ]
+    }
+  ]
+}
